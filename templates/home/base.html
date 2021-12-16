@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Flexbogoss</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Présentation</a></li>
+            <li><a href="#">Formation</a></li>
+            <li><a href="#">Expérience</a></li>
+            <li><a href="#">Projets</a></li>
+        </ul>
+    </nav>
+
+    <div class="space">
+
+    </div>
+ 
+    <div class="contain">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    
+    <footer>
+        <p> Flexbogoss - © Tous droits reservé - {% now 'Y' %}</p>
+    </footer>
+</body>
+</html>
